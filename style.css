@@ -53,7 +53,6 @@ button style
 }
 .button:hover{
     background-color:tomato;
-    
 }
 
 /*--------------------
@@ -73,7 +72,10 @@ button style
 .half-width img{
     width: 60%;
 }
-
+.half-width img:hover{
+    transition: 2s;
+    transform: scale(1.2);
+}
 
 /* ----------------
 player section style
@@ -88,25 +90,21 @@ player section style
     grid-template-columns: repeat(3,1fr);
     grid-row-gap:30px;
     width: 50%;
-    
     background: #FFFFFF;
-   
 }
 .players{
-    
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin: 10px;
-   
 }
-   .player img{
+.player img{
     margin: 10px ;
     width: 300px;
     height: 256px;
    }
-   .player-info{
+.player-info{
        margin: 10px;
-   }
+    }
 /*-----------------
  match section style 
 -----------------*/
@@ -116,11 +114,9 @@ player section style
     align-items: center;
     margin-top: 75px;
 }
-
 .match-part{
     width: 50%;
-    padding-left:8%;
-    
+    padding-left:8%;  
 }
 .match-part img{
     width: 70%;
@@ -133,9 +129,7 @@ player section style
      display: flex;
      flex-direction: row;
      padding-top: 20px;
-     
  }
-
  .match-result img{
      width: 70%;
      border-radius: 40px;
@@ -151,7 +145,6 @@ player section style
    background-repeat: no-repeat;
    background-size: cover;
    margin: 0% auto;
-  
  }
  .upcoming-info{
      color: white;
@@ -178,19 +171,15 @@ footer{
     cursor: pointer;
 }
 
-
-
-/* /* --------------------
-for ipad
+/* /* -------------------
+ Media query for Mobail
 ---------------------- */
 
 @media only screen and (max-width:688px) {
     
     body{
         margin: 0%;
-        
     }
-   
     .header-container,.menubar{
         width: 100%;
        flex-direction: column;
@@ -203,39 +192,33 @@ for ipad
    .half-width,.match-container{
        padding: 0%;
        margin: 0%;
-       
    }
    .half-width img{
        width: 300px;
    }
-  
- 
     .upcoming-info,.upcoming-match{
      width: 100%;
     }
     .banner-section,.match-container,.match-result-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
-}
-
-.player-container,.team,.points-table,.match-part{
+    }
+   .player-container,.team,.points-table,.match-part{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-right: 5px;
     padding: 0%;
     margin: 0%;
-}
-.match-part,.half-width,.match-part{
+    }
+   .match-part,.half-width,.match-part{
     width: 100%;
     padding-top:10px ;
     align-items: center;
-}
-.footer-logo img{
+    }
+    .footer-logo img{
     width: 60%;
-
-}
+    }
 }
 
 /*-----------------------
@@ -251,8 +234,4 @@ for ipad
     .player-container{
         width: 100%;
     }
-   
-    
-    
-
 }
