@@ -45,6 +45,7 @@ button style
 .button{
    background-color:#E02C6D ;
    padding: 10px 24px;
+   width: 150px;
    color: #FFFFFF;
    font-size: 16px;
    border-radius: 5px;
@@ -211,6 +212,10 @@ for ipad
        margin: 0%;
        
    }
+   .half-width img{
+       width: 300px;
+   }
+  
  
     .upcoming-info,.upcoming-match{
      width: 100%;
@@ -221,7 +226,7 @@ for ipad
 
 }
 
-.player-container,.team,.points-table,.match-part,.button{
+.player-container,.team,.points-table,.match-part{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
