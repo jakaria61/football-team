@@ -14,14 +14,18 @@ menu style here
  -----------------*/
 .header-container{
     background: #2D25A0;
+    width: 1440px;
     height: 677px;
+    
 }
+
 .menubar{
     display: flex;
     justify-content: space-between; 
-    flex-wrap: wrap;
-    padding: 10px 34px;
-    padding-left: 8%;
+    align-items: center;
+    padding-top: 34px;
+    padding-right: 281px;
+    padding-left:8%;
 }
 .menu a{
  text-decoration: none;
@@ -52,6 +56,15 @@ button style
     background-color:tomato;
     
 }
+
+/*--------------------
+ banner section style 
+---------------------- */
+.banner-section{
+    display: flex;
+    margin-top:50px;
+
+}
 .half-width{
     width: 50%;
     padding-left:8%;
@@ -59,15 +72,9 @@ button style
     font-size: 24px;
 }
 .half-width img{
-    width: 70%;
+    width: 60%;
 }
-.banner-section{
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 75px;
 
-}
 
 /* ----------------
 player section style
@@ -75,13 +82,14 @@ player section style
 .player-container{
     justify-content: center;
     align-items: center;
+    padding-left:8%;
 }
 .team{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap:30px;
     width: 50%;
-    padding-left:8%;
+    
     background: #FFFFFF;
    
 }
@@ -89,17 +97,16 @@ player section style
     
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    
-    margin: 15px;
+    margin: 10px;
    
 }
    .player img{
-    margin: 15px ;
+    margin: 10px ;
     width: 300px;
     height: 256px;
    }
    .player-info{
-       margin: 15px;
+       margin: 10px;
    }
 /*-----------------
  match section style 
@@ -129,10 +136,7 @@ player section style
      padding-top: 20px;
      
  }
- .match-result{
-     width: 50%;
-     padding: 8%;
- }
+
  .match-result img{
      width: 70%;
      border-radius: 40px;
@@ -147,6 +151,7 @@ player section style
    background-image: url(images/upcoming-match.jpg);
    background-repeat: no-repeat;
    background-size: cover;
+   margin: 0% auto;
   
  }
  .upcoming-info{
@@ -174,3 +179,67 @@ footer{
     cursor: pointer;
 }
 
+/*------------------------------
+ media query for mobile phone 
+------------------------------- */
+/* @media only screen and (max-width:688px) {
+   
+    
+
+    } */
+
+/* /* --------------------
+for ipad
+---------------------- */
+
+@media only screen and (max-width:688px) {
+    
+    body{
+        margin: 0%;
+        
+    }
+   
+    .header-container,.menubar{
+        width: 100%;
+       flex-direction: column;
+    }
+   .banner-section{
+       display: flex;
+       flex-direction: column;
+       margin: 0%;
+   }
+   .half-width,.match-container{
+       padding: 0%;
+       margin: 0%;
+       
+   }
+ 
+    .upcoming-info,.upcoming-match{
+     width: 100%;
+    }
+    .banner-section,.match-container,.match-result-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+}
+
+.player-container,.team,.points-table,.match-part,.button{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-right: 5px;
+    padding: 0%;
+    margin: 0%;
+}
+.match-part,.half-width,.match-part{
+    width: 100%;
+    padding-top:10px ;
+    align-items: center;
+}
+.footer-logo img{
+    width: 100%;
+
+}
+}
+
+/* for lapto */
