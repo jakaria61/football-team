@@ -5,7 +5,7 @@
 common style  
 -----------------*/
 body{
-    margin: 0;
+    margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -178,14 +178,7 @@ footer{
     cursor: pointer;
 }
 
-/*------------------------------
- media query for mobile phone 
-------------------------------- */
-/* @media only screen and (max-width:688px) {
-   
-    
 
-    } */
 
 /* /* --------------------
 for ipad
@@ -245,4 +238,21 @@ for ipad
 }
 }
 
-/* for lapto */
+/*-----------------------
+ media query for ipad 
+----------------------- */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    
+    .team{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player-container{
+        width: 100%;
+    }
+   
+    
+    
+
+}
