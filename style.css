@@ -17,20 +17,20 @@ menu style here
     width: 100%;
     height: 677px;
 }
-
 .menubar{
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding-top: 34px;
-    margin: 0 8%;
+    margin-left: 70px;
 }
+
 .menu a{
- text-decoration: none;
- font-weight: 500;
-font-size: 16px;
-margin-right: 36px;
-color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 34px;
+    color: #FFFFFF;
 }
 .menu a:hover{
     background-color: whitesmoke;
@@ -51,6 +51,12 @@ button style
    border-radius: 5px;
    cursor: pointer;
 }
+.menu-btn{
+    margin-right:70px ;
+}
+.live-button{
+    margin-left: 70px;
+}
 .button:hover{
     background-color:tomato;
 }
@@ -61,16 +67,18 @@ button style
 .banner-section{
     display: flex;
     margin-top:50px;
-
+}
+.title{
+    margin-left: 70px;
 }
 .half-width{
-    width: 50%;
-    padding-left:8%;
+    width:100%;
     color: #FFFFFF;
     font-size: 24px;
 }
 .half-width img{
     width: 60%;
+
 }
 .half-width img:hover{
     transition: 2s;
@@ -83,7 +91,7 @@ player section style
 .player-container{
     justify-content: center;
     align-items: center;
-    padding-left:8%;
+     margin-left: 70px; 
 }
 .team{
     display: grid;
@@ -91,6 +99,7 @@ player section style
     grid-row-gap:30px;
     width: 50%;
     background: #FFFFFF;
+    margin-left: 8%;
 }
 .players{
     background: #FFFFFF;
@@ -112,11 +121,11 @@ player section style
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 70px;
 }
 .match-part{
     width: 50%;
-    padding-left:8%;  
+    margin-left: 70px;  
 }
 .match-part img{
     width: 70%;
@@ -184,18 +193,20 @@ footer{
         width: 100%;
        flex-direction: column;
     }
+    .menubar,.menu-btn,.half-width,.title,.match-part{
+        margin-left: 1px;
+    }
+   
    .banner-section{
        display: flex;
        flex-direction: column;
        margin: 0%;
    }
-   .half-width,.match-container{
-       padding: 0%;
-       margin: 0%;
-   }
+  
    .half-width img{
        width: 300px;
-   }
+       
+       }
     .upcoming-info,.upcoming-match{
      width: 100%;
     }
@@ -204,7 +215,7 @@ footer{
         grid-template-columns: repeat(1, 1fr);
     }
    .player-container,.team,.points-table,.match-part{
-    width: 100%;
+   
     display: grid;
     grid-template-columns: repeat(1,1fr);
     margin-right: 5px;
@@ -226,12 +237,16 @@ footer{
 ----------------------- */
 
 @media only screen and (min-width:688px) and (max-width: 992px) {
-    
+        
     .team{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        
     }
-    .player-container{
+    .player-container {
         width: 100%;
+        justify-content: center;
+        margin: 0%;
+        margin-left: 1px;
     }
 }
